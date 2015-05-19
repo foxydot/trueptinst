@@ -102,7 +102,7 @@ if (!class_exists('MSDTeamCPT')) {
                 'has_archive' => false,
                 'query_var' => true,
                 'can_export' => true,
-                'rewrite' => array('slug'=>'about-us/team/team-members','with_front'=>false),
+                'rewrite' => array('slug'=>'team-members','with_front'=>false),
                 'capability_type' => 'post'
             );
         

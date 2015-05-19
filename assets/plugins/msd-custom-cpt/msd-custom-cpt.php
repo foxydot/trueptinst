@@ -101,7 +101,7 @@ if (!class_exists('MSDCustomCPT')) {
         	register_activation_hook(__FILE__, array(&$this,'check_requirements'));
         	//get sub-packages
         	requireDir(plugin_dir_path(__FILE__).'/lib/inc');
-            if(class_exists('MSDNewsCPT')){
+            /*if(class_exists('MSDNewsCPT')){
                 $this->news_class = new MSDNewsCPT();
                 register_activation_hook( __FILE__, create_function('','flush_rewrite_rules();') );
                 register_deactivation_hook( __FILE__, create_function('','flush_rewrite_rules();') );

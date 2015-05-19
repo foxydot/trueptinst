@@ -1,0 +1,158 @@
+/* Pre Header */
+.pre-header{
+  border-top: 4px solid @blue;
+  background: @ltgrey;
+  .wrap{
+    text-align: right;
+    .social-media{
+      display: inline-block;
+      a{
+        i.fa{
+          background: @dkgrey;
+          color: @white;
+          width: 2em;
+          height: 2em;
+          text-align: center;
+          line-height: 2em;
+          .border-radius(100%);
+        }
+        span{
+          text-indent: -9999px;
+          display: none;
+          }
+      }
+     }
+  }
+}
+
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+  background-color: #fff;
+}
+
+.site-header .wrap {
+  padding: 40px 0;
+  padding: 4rem 0;
+  .widget-area{
+    padding-top: 24px;
+    padding-top: 2.4rem;
+    .menu{
+      li.menu-item{
+        margin: 0 10px;
+        margin: 0 1rem;
+      }
+    }
+    .search-form{
+      display: inline-block;
+      padding: 1rem 0 1rem 1rem;
+      position: relative;
+      input[type="search"] {
+        padding: 0.5rem;
+        width: 80%;
+      }
+      input[type="submit"] {
+        border: 0;
+        height: 24px;
+        margin: 3px;
+        padding: 0;
+        position: relative;
+        width: 24px;
+        color: @blue;
+        background: 0;
+        font-size: 24px;
+        font-size: 2.4rem;
+        .fontawesome;
+      }
+    }
+  }
+}
+
+/* Title Area
+--------------------------------------------- */
+
+.title-area {
+  float: left;
+  .customsanserif;
+  font-weight: 700;
+  padding: 16px 0;
+  padding: 1.6rem 0;
+  width: 320px;
+}
+
+.header-image .title-area {
+  padding: 0;
+}
+
+.site-title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 1;
+  margin: 0 0 8px;
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+}
+
+.site-title a,
+.site-title a:hover {
+  color: #333;
+}
+
+.site-description {
+  color: #999;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+/* Full width header, no widgets */
+
+.header-full-width .title-area,
+.header-full-width .site-title {
+  /*width: 100%;*/
+}
+
+.header-image .site-description,
+.header-image .site-title a {
+  display: block;
+  text-indent: -9999px;
+}
+
+/* Logo, hide text */
+
+.header-image .site-header .wrap {
+  padding: 0;
+}
+
+.header-image .site-title a {
+  float: left;
+  min-height: 100px;
+  width: 225px;
+  background: url(../img/logo.svg) no-repeat center center;
+  background-size: contain;
+}
+
+/* Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+  float: right;
+  text-align: right;
+  width: 65%;
+  .widget{
+    display: inline-block;
+    .widget-wrap{
+      background: none;
+      .modal{
+        text-align: center;
+      }
+    }
+  }
+}
+
+.header-image .site-header .widget-area {
+}

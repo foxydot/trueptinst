@@ -1,0 +1,6 @@
+.about-you-tabs .nav-tabs li a img {
+  padding: 0;
+}
+.about-you-tabs .nav-tabs li a:after {
+  left: 50%;
+}

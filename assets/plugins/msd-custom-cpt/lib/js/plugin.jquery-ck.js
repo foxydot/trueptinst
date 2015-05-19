@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e(".imagemap img").mapster({scaleMap:!0,clickNavigate:!0})});

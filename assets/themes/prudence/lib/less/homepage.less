@@ -1,0 +1,217 @@
+@import 'lesshat';
+@import 'mixins';
+.nav-primary{
+  ul.menu-primary{
+    >li.menu-item{
+      background: none;
+      >.sub-menu{
+        display: none;
+      }
+    }
+    >li.menu-item:hover{
+      >.sub-menu{
+        display: block;
+      }
+    }
+    >li.first-child{
+      /*border-right: 1px solid @white;*/
+      background: @blue;
+      border: 0;
+      .box-shadow(0 1px 10px rgba(20,20,20,0.5));
+      a{
+        text-decoration: none;
+        color: @white;
+      }
+      >.sub-menu{
+        z-index: 500;
+        display:block;
+        opacity: 1;
+        left: 0;
+      }
+    }
+    >li.inactive{
+      background: none;
+      .box-shadow(0 0 0 rgba(0,0,0,0));
+      border: 0;
+      a{
+        color: @orange;
+      }
+    }
+  }
+}
+#hp-top{
+  display: block;
+  min-height: 300px;
+  margin-bottom: 2rem;
+  margin-top: 38px;
+  .wrap{
+    .carousel{
+      border-top: 4px solid @ltgrey;
+      border-bottom: 4px solid @blue;
+      margin: 0 auto;
+      width: 100%;
+      .item {
+        height: 300px;
+        .sd2-node-caption {
+          display: none;
+        }
+        .full-slide-link-hit-area{
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .carousel-control{
+        font-size: 12.0rem;
+        width: 100px;
+        padding-top: 40px;      
+      }
+      .carousel-control:focus{
+        outline: none;
+      }
+      .carousel-control.right{
+        left: auto;
+        right: 0px;
+      }
+    }
+  }
+}
+.site-inner{
+  display: none;
+}
+#hp-callout{
+  .textwidget{
+    .customsanserif;
+    font-size: 1.4rem;
+    margin: 2.8rem auto 1.4rem;
+    text-align: center;
+  }
+}
+.slidedeck-iframe-embed{
+  margin: 0 auto;
+  border:1px solid @ltgrey;
+}
+#homepage-widgets{
+  margin-bottom: 1rem;
+  .wrap{
+    section.widget{
+      .widget-wrap{
+        background: 0;
+        padding: 1rem 0;
+        h4.widget-title{
+          background: 0;
+          margin: 0 0 1rem 0;
+          padding: 0 0 0.5rem 0;
+          color: @blue;
+          text-transform: none;
+          font-weight: 700;
+          font-size: 26px;
+          font-size: 2.6rem;
+          border-bottom: 1px solid @ltgrey;
+        }
+        .title-link{
+          font-weight: 700;
+          color: @blue;
+        }
+        .read-more{
+          font-size: 0.8em;
+          font-weight: 700;
+          color: @orange;
+          text-transform: uppercase;
+        }
+        .read-more:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .in-the-news.widget,.truepoint-viewpoint.widget{
+      ul{
+        li{
+          margin-bottom: 1rem;
+          i{
+            color: @orange;
+          }
+          p{
+            display: inline;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .video.widget{
+      .widget-wrap{
+        background: @ltgrey;
+        padding: 1rem;
+        a.msd-widget-text{display: none;}
+      }
+    }
+    .trackrecord.widget{
+      .widget-wrap{
+        font-weight: 700;
+        color: @medgrey;
+        a.readmore{
+          position: relative;
+          float: right;
+          color: @orange;
+          padding: 0.6rem 2rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+/* Responsive Design Custom Styles
+------------------------------------------------------------ */
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1080px) {
+  #homepage-widgets{
+    div.row{
+      margin: 0;
+    }
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /* Enter Your Custom Styles Here */ 
+  #hp-top{
+    min-height: 200px;
+    .wrap{
+    min-height: 200px;
+     .carousel .item {
+      height: 200px;
+    }
+  }
+  .carousel-control{
+    display: none;
+  }
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  /* Enter Your Custom Styles Here */ 
+  #hp-top{
+    min-height: 150px;
+    .wrap{
+    min-height: 150px;
+    .carousel .item {
+      height: 150px;
+    }  
+  }
+  }
+}
+
+
+@media only screen and (max-width : 479px) {  
+  /* Enter Your Custom Styles Here */ 
+  #hp-top{
+    display: none;
+  }
+} 
+
+@media only screen and (max-width : 319px) {  
+  /* Enter Your Custom Styles Here */ 
+}

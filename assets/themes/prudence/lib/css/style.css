@@ -6575,35 +6575,8 @@ Site Navigation
 }
 /* Primary Navigation
 --------------------------------------------- */
-.nav-primary .wrap {
-  background: url('../img/bkg-nav.gif');
-}
 .nav-primary ul.menu-primary {
   position: relative;
-}
-.nav-primary ul.menu-primary li.menu-item {
-  width: 50%;
-  float: left;
-  background: none;
-  text-align: center;
-  -webkit-border-radius: 12px 12px 0px 0px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 12px 12px 0px 0px;
-  -moz-background-clip: padding;
-  border-radius: 12px 12px 0px 0px;
-  background-clip: padding-box;
-  font-size: 26px;
-  font-size: 2.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: static;
-}
-.nav-primary ul.menu-primary li.menu-item a {
-  padding-top: 10px;
-  padding-top: 1rem;
-  color: #de641f;
-}
-.nav-primary ul.menu-primary li.menu-item .sub-menu {
   width: 100%;
   background: #1b2069;
   border-top: 1px solid #ffffff;
@@ -6611,7 +6584,7 @@ Site Navigation
   font-size: 16px;
   font-size: 1.6rem;
 }
-.nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item {
+.nav-primary ul.menu-primary li.menu-item {
   float: none;
   background: 0;
   width: auto;
@@ -6624,7 +6597,7 @@ Site Navigation
   border-bottom: 3px solid transparent;
   position: relative;
 }
-.nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item a {
+.nav-primary ul.menu-primary li.menu-item a {
   font-size: 16px;
   font-size: 1.6rem;
   padding: 6px 16px;
@@ -6634,7 +6607,7 @@ Site Navigation
   border: 0;
   color: #ffffff;
 }
-.nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item .sub-menu {
+.nav-primary ul.menu-primary li.menu-item .sub-menu {
   position: absolute;
   left: 0;
   background: white;
@@ -6645,28 +6618,21 @@ Site Navigation
   box-shadow: 0px 1px 10px rgba(20, 20, 20, 0.5);
   border-top: 3px solid #de641f;
 }
-.nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item .sub-menu li.menu-item {
+.nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item {
   display: block;
   float: none;
   border-bottom: 1px solid #dadfe1;
   background: white;
   text-align: left;
 }
-.nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item .sub-menu li.menu-item a {
+.nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item a {
   font-weight: 400;
   font-size: 14px;
   font-size: 1.4rem;
   text-transform: none;
 }
-.nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item .sub-menu li.menu-item:hover {
-  background: #ebeeef;
-}
 .nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item:hover {
-  background: #ffffff;
-  border-bottom: 3px solid #de641f;
-}
-.nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item:hover a {
-  color: #1b2069;
+  background: #ebeeef;
 }
 .nav-primary ul.menu-primary > li.menu-item:hover,
 .nav-primary ul.menu-primary > li.menu-item.current-menu-ancestor {
@@ -6689,16 +6655,6 @@ Site Navigation
 }
 .nav-primary ul.menu-primary li.menu-item:hover .sub-menu {
   z-index: 900;
-}
-.nav-primary ul.menu-primary > li.menu-item.about-you .sub-menu,
-.nav-primary ul.menu-primary > li.menu-item:first-child .sub-menu,
-.nav-primary ul.menu-primary > li.menu-item.first-child .sub-menu {
-  text-align: left;
-}
-.nav-primary ul.menu-primary > li.menu-item.about-us .sub-menu,
-.nav-primary ul.menu-primary > li.menu-item:last-child .sub-menu,
-.nav-primary ul.menu-primary > li.menu-item.last-child .sub-menu {
-  text-align: right;
 }
 /* Secondary Navigation
 --------------------------------------------- */

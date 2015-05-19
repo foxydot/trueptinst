@@ -101,29 +101,7 @@ jQuery(document).ready(function($) {
        }
     });
     
-    /*$('.event.menu-item>a').click(function(){
-        var eventTitle = $(this).html();
-        _gaq.push(['_trackEvent','tab','click',eventTitle,1]);
-    });*/
     
-    // add target="_blank" to all *external* 
-    var internal_urls = new Array('truepoint.oc','72.52.131.35','truepointwealth.com','truepointinc.com','truepoint.msdlab2.com');
-    $('a').attr('target',function(){
-        var url = $(this).attr('href');
-        var target = $(this).attr('target');
-        if(url === '#' || strripos(url,'http',0)===false){
-            return '_self';
-        } else {
-            var i=0;
-            while (internal_urls[i]){
-                if(strripos(url, internal_urls[i], 0)){
-                    return target;
-                }
-                i++;
-            }
-            return '_blank';
-        }
-    });
     tabToDropdown($('div.about-you-tabs'));
     $(window).resize(function(){
         tabToDropdown($('div.about-you-tabs'));

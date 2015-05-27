@@ -9,7 +9,7 @@ if ( !defined('ABSPATH') )
 	die('-1');
 
 echo $before_widget;
-if(is_front_page()){
+/*if(is_front_page()){
     if ( !empty( $title ) ) { echo $before_title . $title . $after_title; }
     echo '<div class="widget-content">';
     
@@ -26,7 +26,7 @@ if(is_front_page()){
     }
     echo '<div class="clear"></div>
     </div>';
-}else{
+}else{*/
     if ( !empty( $title ) ) { echo $before_title . $title . $after_title; }
     echo '<div class="widget-content">';
     echo $this->get_image_html( $instance, true );
@@ -42,5 +42,5 @@ if(is_front_page()){
     }
     echo '<div class="clear"></div>
     </div>';
-}
+//}
 echo $after_widget;

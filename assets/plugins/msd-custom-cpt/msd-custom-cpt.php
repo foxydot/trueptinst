@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: MSD Custom CPT
-Description: Custom plugin for GreyandPape.com
+Description: Custom plugin
 Author: Catherine Sandrick
 Version: 0.0.1
 Author URI: http://msdlab.com

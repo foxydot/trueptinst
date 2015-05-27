@@ -6601,7 +6601,7 @@ Site Navigation
   font-size: 16px;
   font-size: 1.6rem;
   padding: 6px 16px;
-  padding: 0.6rem 1.6rem;
+  padding: 0.6rem 4.7rem;
   margin: 0;
   background: 0;
   border: 0;
@@ -6630,6 +6630,7 @@ Site Navigation
   font-size: 14px;
   font-size: 1.4rem;
   text-transform: none;
+  color: #1b2069;
 }
 .nav-primary ul.menu-primary li.menu-item .sub-menu li.menu-item:hover {
   background: #ebeeef;

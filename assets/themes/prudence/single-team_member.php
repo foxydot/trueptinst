@@ -1,7 +1,13 @@
 <?php
 $msd_team_display = new MSDTeamDisplay;
+/** Force full width layout */
+add_filter( 'genesis_pre_get_option_site_layout', 'msdlab_force_layout' );
+function msdlab_force_layout( $opt ) {
+    $opt = 'full-width-content'; // You can change this to any Genesis layout
+    return $opt;
+}
 remove_action('genesis_sidebar','genesis_do_sidebar');
-add_action('genesis_sidebar','msdlab_do_about_us_sidebar');
+//add_action('genesis_sidebar','msdlab_do_about_us_sidebar');
 function msdlab_do_about_us_sidebar(){
     if(is_active_sidebar('team')){
         dynamic_sidebar('team');

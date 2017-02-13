@@ -94,3 +94,4 @@ local.properties
 # Codekit
 config.codekit
 .codekit-cache
+*codekit*

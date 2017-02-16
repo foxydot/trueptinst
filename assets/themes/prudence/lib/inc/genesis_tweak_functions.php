@@ -734,7 +734,7 @@ function msdlab_add_footer_subscribe_modal($atts){
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Subscribe to the Truepoint Bulletin</h4>
+        <h4 class="modal-title" id="myModalLabel">Subscribe to Truepoint Institutional Advisors\' Latest News</h4>
       </div>
       <div class="modal-body">';
       print do_shortcode('[gravityform id="1" name="Truepoint Subscription" title="false" ajax="true"]');
